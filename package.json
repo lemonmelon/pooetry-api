@@ -1,0 +1,26 @@
+{
+  "name": "pooetry-api",
+  "version": "0.1.0",
+  "description": "Pooetry API",
+  "main": "-",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "async": "^1.5.2",
+    "express": "^4.13.4",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemonmelon/pooetry-api.git"
+  },
+  "author": "Niels Abildgaard <me@hypesystem.dk>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/lemonmelon/pooetry-api/issues"
+  },
+  "homepage": "https://github.com/lemonmelon/pooetry-api#readme"
+}
