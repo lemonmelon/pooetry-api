@@ -13,6 +13,11 @@ fs.mkdir("data", function(error) {
 
 var app = express();
 
+app.use(function defaultResponseCharset(req, res, next) {
+    res.set("Content-Type", "application/json; charset=utf-8");
+    next();
+});
+
 app.use(bodyParser.json());
 
 app.use(function requestStartLogger(req, res, next) {
