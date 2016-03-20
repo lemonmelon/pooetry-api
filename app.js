@@ -56,7 +56,7 @@ app.get("/content", function(req, res) {
             return res.status(500).send({ error: "Failed to get data" });
         }
         async.map(files, function(file, callback) {
-            fs.readFile(path.join("data", file), function(error, buf) {
+            fs.readFile(path.join("data", file), "utf8", function(error, buf) {
                 if(error) {
                     return callback(error);
                 }
