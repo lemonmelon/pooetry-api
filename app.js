@@ -82,7 +82,7 @@ app.post("/note", function(req, res) {
     if(!req.body.text) {
         return res.status(400).send({ error: "Missing text arg" });
     }
-    fs.writeFile(path.join("data", uuid.v4() + "__" + req.body.long + "__" + req.body.lat), req.body.text, function(error) {
+    fs.writeFile(path.join("data", uuid.v4() + "__" + req.body.long + "__" + req.body.lat), req.body.text, "utf8", function(error) {
         if(error) {
             console.error("Failed to save note", error);
             return res.status(500).send({ error: "Failed to save note" });
